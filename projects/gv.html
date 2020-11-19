@@ -1,0 +1,41 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Graph Path Visualization</title>
+        <link rel="stylesheet" href={% static "gpv/css/gv.css" %}>
+    </head>
+
+
+    
+    <body>
+        
+        <div class="container">
+
+            <div class="settings">
+                    <input id="data" type="text" placeholder="Input square size (Ex: '16x16')">
+                    <button id="submit-button" >Go</button>
+            </div>
+        
+            <div class="message" id="message-div">
+                <p>This is a simulation of the Breadth First Search algorithm on an undirected graph.</p>
+                <p>First pick the size of the fully connected network represented by blocks.</p>
+                <p>Blocks represent node and adjacent blocks have edges between them - the most nodes a single node can be connected to is four.</p>
+                <p>The "start node" is selected for you at random. Select the "end node" and 
+                    then begin to percolating the network by 
+                    de-selecting the blocks you want to remove.</p>
+            </div>
+
+            <div class="square" id="main-div">
+            </div>
+
+            <div class="go" id="go-div">
+            </div>
+        
+        
+        </div>
+        <script src={% static "gpv/js/gv.js" %} type="text/javascript"></script>
+    </body>
+</html>

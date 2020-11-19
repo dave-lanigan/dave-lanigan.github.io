@@ -1,0 +1,22 @@
+{% extends 'libro/blog-single.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2 class="mb-3">Helper/Classes Functions to make auto-making swapping of Cryptocurrencies possible.</h2>
+        <p>The purpose for this project was to simplify and automate the process of swaping coins on certain decentralized, non-custodial exchanges,
+            such as ShapeShift and Kyber Network. Thereby, allowing for algorithmic trading to take place.
+            Code for this project can be found on my GitHub 
+            <a href="https://github.com/dave-lanigan/auto-swap-coins">here</a>.</p>
+            
+            <h5>Finding the Contract Address and ABI File.</h5>
+            <p> Finding the contract address and ABI for the token can be tricky, usually you should go to <a href="https://etherscan.io/">Etherscan</a> and 
+                search for the coin in the search bar. Then using the contract address you find search again for the ABI. However, for certain coins,
+                such as Paxos, the ABI did not work. In this case, I was forced to go to Paxos GitHub and find it there in the paxos-contracts folder. 
+                This is probably the best way of getting it. Once the the contract address and ABI are acquired, you can add them to the contracts.json file. <p>
+    </div>
+    </div>
+    	
+{% endblock%}

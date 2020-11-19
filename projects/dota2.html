@@ -1,0 +1,18 @@
+{% extends 'libro/blog-single.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="row">
+<div class="col-md-12">
+    <h2 class="mb-3">DOTA 2 Network Project</h2>
+    <p> This master's degree class project involved creating a complex network graph from the OpenDota API data. Data from millions of matches was downloaded 
+        and used to make a network where nodes defined characters and edges between nodes were weighted based on win rates when characters 
+        were playing on the same team. 
+        If a threshold for a win rate is defined, the edges can be percolated to create networks with different numbers of edges.
+        Code for this project can be found on my GitHub 
+        <a href="https://github.com/dave-lanigan/dota_network">here</a>.</p>
+</div>
+</div>
+	
+{% endblock%}

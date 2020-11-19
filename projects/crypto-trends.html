@@ -1,0 +1,23 @@
+{% extends 'libro/blog-single.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2 class="mb-3">Crypto Data Trends Project</h2>
+        <h5>The purpose of this project is to download, consolidate, transform and prepare cryptocurrency price, 
+            volume and google trend data for analysis and exploration.</h5>
+
+            <p>To accomplish this, data was acquired from (3) different sources. 
+            The first was coingecko API where a list of viable coin candidates were pulled, along with their fundamental information. 
+            The coins ranked in the top ~50 by market cap and supported on Binance were used in the final database. 
+            Binance was chosen for its ubiquity as a cryptocurrency exchange, strong API and fairly low trading fees. 
+            The historical data was then pulled from the Binance API using USDT (Tether) as the base currency. 
+            The google trends data was pulled from Google using a pytrends module. Then the data was consolidated into a postgres database organized by date.
+            Code for this project can be found on my GitHub 
+            <a href="https://github.com/dave-lanigan/crypto-trends">here</a>.</p>
+    </div>
+    </div>
+    	
+{% endblock%}

@@ -1,0 +1,52 @@
+{% extends 'libro/blog-single.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="row">
+<div class="col-md-12">
+    <h5 class="mb-3">NOTICE: This work was performed primarily to practice data mining/cleansing and the topic was chosen because of recent public interest in the issue. It is NOT meant as an endorsement of a political stance or policy.</h5>
+    
+    <p> Ever wondered if there is a correlation between the number of guns a country has and the homicide rate? 
+        Intuition would tell us that the more guns a country has the higher the rate of homicide, especially if you come from the USA, which has the most firearms per capita of any country and also the highest homicide rate of an industrialized nation. 
+        Using GDP per capita, gun availability and homicide rate data, it is possible to calculate the correlation coefficient. 
+        This blog post was inspired by a Harvard study from February 2000, using data from the 1990’s, on firearm availability vs homicide rate. 
+        It was partly of interest to see what would change with current data and also how the correlation coefficient would change with additional countries. 
+        The Havard study focused on two sets of 26 and 36 selected countries which were selected with GDP in mind.
+        
+        If the top 20 countries by GDP per capita are selected for analysis the correlation coefficient is 0.417. 
+        However, as can be seen in the figure, both the United States and Qatar are outliers in this group of nations, as one is characterized by a very high number of firearms and the other with a very high homicide rate. 
+        Removing these two nations from the analysis to get a better idea of what the general trend is, shows a slight decrease the correlation coefficient to 0.344.</p>
+
+    <img src="{% static 'images/article/firearm-availability-homocide-rate/p1.png' %}" alt="" class="img-fluid">
+
+        <p>
+            If the top 40 countries are then considered, with Trinidad and Tobago removed from the set of countries because the murder rate is very high there and it 
+            affects the results significantly (with it in the mix the correlation coefficient is -0.06), the correlation coefficient decreases again to the fairly 
+            low value of 0.262. However, as can be seen, the US and Qatar are still outliers in this group and Lithuania can be considered one as well. 
+            Removing them from the calculations sees the correlation coefficient drop to 0.167.
+        </p>
+
+    <img src="{% static 'images/article/firearm-availability-homocide-rate/p2.png' %}" alt="" class="img-fluid">
+
+    <p>
+        If more countries are added to the set used to calculate the correlation coefficient, the value continues to decrease until it becomes negative. 
+        Thus the analysis because fairly unintuitive and may partially explain the reason more countries were not added to the 2000 study. 
+        For interest sake, I added a graph of 178 different countries below.    
+    </p>
+
+    <img src="{% static 'images/article/firearm-availability-homocide-rate/p3.png' %}" alt="" class="img-fluid">
+
+
+    <div class="tag-widget post-tag-container mb-5 mt-5">
+    <p>
+        <u>Methods:</u>
+    </p>
+    <p>
+        Homicide rate data was acquired from the <a href="http://www.unodc.org/">UNODC</a>, where it is available for download. 
+        Gun availability data based on a 2007 <a href="http://www.smallarmssurvey.org/">Small Arms Survey</a> report and GDP per capita data from the <a href="https://www.worldbank.org/">World Bank</a> were extracted from Wikipedia tables using Python and Beautiful Soup Python Library.
+    </p>
+    </div>
+    </div>
+    	
+{% endblock%}

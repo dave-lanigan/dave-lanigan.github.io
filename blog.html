@@ -1,0 +1,183 @@
+{% extends 'libro/base1.html' %}
+{% load static %}
+
+{% block content %}
+
+    <section class="ftco-fixed clearfix">
+      <div class="image js-fullheight float-left">
+        <div class="home-slider owl-carousel js-fullheight">
+        <div class="slider-item js-fullheight" style="background-image: url({% static 'images/code.gif' %});">
+          <div class="overlay"></div>
+          <div class="container">
+          <div class="row slider-text align-items-end" data-scrollax-parent="true">
+            <div class="col-md-10 col-sm-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+            <p class="breadcrumbs"><span><a href="{% url 'davefile:index' %}">Centrum</a></span> <span>Scratch Paper</span></p>
+            <h1 class="mb-3" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Scratch Paper</h1>
+            </div>
+          </div>
+          </div>
+        </div>
+        </div>
+      </div><!-- end:image -->
+
+      <div class="page-container float-right">
+        <div class="row">
+          <div class="col-md-6">
+            
+            
+            {% for article in articles %}
+            <div class="blog-entry ftco-animate">
+              <a href="{% url 'davefile:article' slug=article.slug %}" class="blog-image">
+                <img src={% static 'images/article/'|add:article.slug|add:'/'|add:article.slug|add:'.jpg' %} class="img-fluid" alt="">
+              </a>
+              <div class="text py-4">
+                <div class="meta">
+                  <div><a href="#">{{article.date}}</a></div>
+                  <div><a href="#">Admin</a></div>
+                </div>
+                <h3 class="heading"><a href="{% url 'davefile:article' slug=article.slug %}">{{article.title}}</a></h3>
+                <p>{{article.snippet}}</p>
+              </div>
+            </div>
+            {% endfor %}
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--
+      	<div class="page-container float-right">
+      		<div class="row">
+      			<div class="col-md-6">
+      				<div class="blog-entry ftco-animate">
+                <a href="blog-single.html" class="blog-image">
+                	<img src={% static "images/image_1.jpg" %} class="img-fluid" alt="">
+                </a>
+                <div class="text py-4">
+                  <div class="meta">
+                    <div><a href="#">July 29, 2018</a></div>
+                    <div><a href="#">Admin</a></div>
+                  </div>
+                  <h3 class="heading"><a href="#">Life looks happier</a></h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                </div>
+              </div>
+              <div class="blog-entry ftco-animate">
+                <a href="blog-single.html" class="blog-image">
+                	<img src={% static "images/image_2.jpg" %} class="img-fluid" alt="">
+                </a>
+                <div class="text py-4">
+                  <div class="meta">
+                    <div><a href="#">July 29, 2018</a></div>
+                    <div><a href="#">Admin</a></div>
+                  </div>
+                  <h3 class="heading"><a href="#">Life looks happier</a></h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                </div>
+              </div>
+              <div class="blog-entry ftco-animate">
+                <a href="blog-single.html" class="blog-image">
+                	<img src={% static "images/image_3.jpg" %} class="img-fluid" alt="">
+                </a>
+                <div class="text py-4">
+                  <div class="meta">
+                    <div><a href="#">July 29, 2018</a></div>
+                    <div><a href="#">Admin</a></div>
+                  </div>
+                  <h3 class="heading"><a href="#">Life looks happier</a></h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                </div>
+              </div>
+							<div class="blog-entry ftco-animate">
+                <a href="blog-single.html" class="blog-image">
+                	<img src={% static "images/image_4.jpg" %} class="img-fluid" alt="">
+                </a>
+                <div class="text py-4">
+                  <div class="meta">
+                    <div><a href="#">July 29, 2018</a></div>
+                    <div><a href="#">Admin</a></div>
+                  </div>
+                  <h3 class="heading"><a href="#">Life looks happier</a></h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                </div>
+              </div>
+      			</div>
+
+      			<div class="col-md-6">
+      				<div class="blog-entry ftco-animate">
+                <a href="blog-single.html" class="blog-image">
+                	<img src={% static "images/image_5.jpg" %} class="img-fluid" alt="">
+                </a>
+                <div class="text py-4">
+                  <div class="meta">
+                    <div><a href="#">July 29, 2018</a></div>
+                    <div><a href="#">Admin</a></div>
+                  </div>
+                  <h3 class="heading"><a href="#">Life looks happier</a></h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                </div>
+              </div>
+              <div class="blog-entry ftco-animate">
+                <a href="blog-single.html" class="blog-image">
+                	<img src={% static "images/image_6.jpg" %} class="img-fluid" alt="">
+                </a>
+                <div class="text py-4">
+                  <div class="meta">
+                    <div><a href="#">July 29, 2018</a></div>
+                    <div><a href="#">Admin</a></div>
+                  </div>
+                  <h3 class="heading"><a href="#">Life looks happier</a></h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                </div>
+              </div>
+              <div class="blog-entry ftco-animate">
+                <a href="blog-single.html" class="blog-image">
+                	<img src={% static "images/image_7.jpg" %} class="img-fluid" alt="">
+                </a>
+                <div class="text py-4">
+                  <div class="meta">
+                    <div><a href="#">July 29, 2018</a></div>
+                    <div><a href="#">Admin</a></div>
+                  </div>
+                  <h3 class="heading"><a href="#">Life looks happier</a></h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                </div>
+              </div>
+              <div class="blog-entry ftco-animate">
+                <a href="blog-single.html" class="blog-image">
+                	<img src={% static "images/image_8.jpg" %} class="img-fluid" alt="">
+                </a>
+                <div class="text py-4">
+                  <div class="meta">
+                    <div><a href="#">July 29, 2018</a></div>
+                    <div><a href="#">Admin</a></div>
+                  </div>
+                  <h3 class="heading"><a href="#">Life looks happier</a></h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                </div>
+              </div>
+      			</div>
+      		</div>
+          -->
+          <!--
+          <div class="row mt-5">
+	          <div class="col text-center">
+	            <div class="block-27">
+	              <ul>
+	                <li><a href="#">&lt;</a></li>
+	                <li class="active"><span>1</span></li>
+	                <li><a href="#">2</a></li>
+	                <li><a href="#">3</a></li>
+	                <li><a href="#">4</a></li>
+	                <li><a href="#">5</a></li>
+	                <li><a href="#">&gt;</a></li>
+	              </ul>
+	            </div>
+	          </div>
+	        </div>
+        </div>--><!-- end: page-container-->
+      </section>
+    	
+{% endblock %}
