@@ -38,7 +38,7 @@
               <ul class="mb-5">
                 <li class="active"><a href="index.html"><span>Centrum</span></a></li>
                 <li><a href="projects.html"><span>Projects</span></a></li>
-                <!-- <li><a href="blog.html"><span>Scratch Paper</span></a></li> -->
+                <li><a href="blog.html"><span>Scratch Paper</span></a></li>
                 <li><a href="resume.html"><span>Resume</span></a></li>
               </ul>
             </div>
@@ -71,48 +71,74 @@
       <section class="ftco-fixed clearfix">
         <div class="image js-fullheight float-left">
           <div class="home-slider owl-carousel js-fullheight">
-            <div class="slider-item js-fullheight" style="background-image: url('images/code.gif');">
-              <div class="overlay"></div>
-              <div class="container">
-                <div class="row slider-text align-items-end" data-scrollax-parent="true">
-                  <div class="col-md-10 col-sm-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                    <!-- <p class="breadcrumbs"><span><a href="{% url 'davefile:index' %}">Centrum</a></span> <span>ABOUT</span></p> -->
-                    <h1 class="mb-3" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Centrum</h1>
-                  </div>
-                </div>
+          <div class="slider-item js-fullheight" style="background-image: url('images/code.gif');">
+            <div class="overlay"></div>
+            <div class="container">
+            <div class="row slider-text align-items-end" data-scrollax-parent="true">
+              <div class="col-md-10 col-sm-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+              <p class="breadcrumbs"><span><a href="index.html">Centrum</a></span> <span>PROJECTS</span></p>
+              <h1 class="mb-3" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Projects</h1>
               </div>
             </div>
+            </div>
+          </div>
           </div>
         </div><!-- end:image -->
-        <div class="page-container float-right">
-          <div class="row about-section">
-            <div class="col-md-8 ftco-animate">
-              <h2 class="mb-8git ">David's Profile.</h2>
-              <p>This website's primary purpose is to showcase some of my technology competencies and provide a platform to act as a virtual resume or professional profile. </p>
-              <p>It includes a description of coding/tech skills, personal project descriptions, links and blog posts about interests. </p>
-            </div>
-            <div class="col-md-8 mt-5 ftco-animate">
-              <!-- <p>This website was designed using the Django web framework, coded in Python, and hosted on a micro-server on Google Cloud. 
-                It uses Nginx for serving static content and Gunicorn to act as the HTTP server. 
-                It also utilizes Postgres as the database for the blog posts.</p>
-              <p>The base HTML, CSS and Javascript are part of a Colorlib template called Libro and the template was modified to serve my purposes. The code can be found my github profile. </p>
-              <p>I choose Django because Python is the language I know best, it is user friendly and easy to deploy and it has a handy admin center that made creating the additional blog app easy and intuitive.</p> -->
-              
-              <!--
-              <h3 class="mb-4 mt-5">Other Profiles.</h3>
-              <ul class="ftco-footer-social list-unstyled">
-                <li class="ftco-animate"><a href="https://github.com/dave-lanigan"><span class="icon-github"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-linkedin"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
-              -->
-            </div>
-          </div>
-        </div><!-- end: page-container-->
-      </section>
-
-
-
+              <div class="page-container-no-gutters float-right">
+                <div class="row no-gutters">
+                  <div class="col-md-6 blog-entry-3 ftco-animate">
+                    <a href="{% url 'davefile:dota2' %}" class="blog-img d-flex justify-content-center align-items-end" style="background-image: url( 'images/dota2.jpg' );">
+                      <div class="text p-4">
+                        <span>Project</span>
+                        <h3>DOTO 2 Network</h3>
+                      </div>
+                    </a>
+                  </div>
+              <!--  
+                <div class="col-md-6 blog-entry-3 ftco-animate">
+                    <a href="blog-single.html" class="blog-img d-flex justify-content-center align-items-end" style="background-image: url( {% static 'images/image_1.jpg' %} );">
+                      <div class="text p-4">
+                        <span>Project</span>
+                        <h3>Airfoil profile generation tool</h3>
+                      </div>
+                    </a>
+                </div>
+                -->
+                  <div class="col-md-6 blog-entry-3 ftco-animate">
+                    <a href="{% url 'davefile:crypto' %}" class="blog-img d-flex justify-content-center align-items-end" style="background-image: url( 'images/bitcoin.jpg' );">
+                      <div class="text p-4">
+                        <span>Project</span>
+                        <h3>Udacity Nanodegree Final Project</h3>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-6 blog-entry-3 ftco-animate">
+                    <a href="{% url 'davefile:kybernet' %}" class="blog-img d-flex justify-content-center align-items-end" style="background-image: url( 'images/kybernet.png' );">
+                      <div class="text p-4">
+                        <span>Project</span>
+                        <h3>Kyber Network API Python Wrapper</h3>
+                      </div>
+                    </a>
+                </div>
+                  <div class="col-md-6 blog-entry-3 ftco-animate">
+                    <a href="gv.html" class="blog-img d-flex justify-content-center align-items-end" style="background-image: url( 'images/gpv.png' );">
+                      <div class="text p-4">
+                        <span>Project</span>
+                        <h3>Breadth First Search Visualization</h3>
+                      </div>
+                    </a>
+                </div>
+              <div class="col-md-6 blog-entry-3 ftco-animate">
+                <a href="{% url 'davefile:judica' %}" class="blog-img d-flex justify-content-center align-items-end" style="background-image: url( 'images/judica-me.png' );">
+                  <div class="text p-4">
+                    <span>Project</span>
+                    <h3>Suscipe</h3>
+                  </div>
+                </a>
+              </div>
+      
+              </div><!-- end: page-container-->
+            </section>
 
 
 
