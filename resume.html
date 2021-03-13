@@ -76,8 +76,37 @@
         <div class="col-md-7">
             <h3>Experience</h3>
             <hr>
+
+            <h5>Client Projects</h5>
             <div class="blog-post">
-              <p class="blog-post-title"> <em>Project:</em> <strong>RESTful API</strong> </p>
+              <p class="blog-post-title"><strong>Day trading BOT using Alpaca API</strong> </p>
+              <p>January 2021 - Present</p>
+              <p> A Python implementation of a semi-custom momentum day trading trategy.</p>
+              
+              <ul>
+                  <li>Written in Python.</li>
+                  <li><a href="https://alpaca.markets/docs/api-documentation/api-v2/account/">Alpaca API</a> to buy and sell stocks</li>
+                  <li>Uses <a href="https://alpaca.markets/docs/api-documentation/api-v2/account/">Finviz</a> website to do initial stock screening.</li>
+                  <li>Custom backtester based on <a href="https://kernc.github.io/backtesting.py/">backtesting.py</a> Python module.</li>
+                </ul>
+          </div><!-- /.blog-post -->
+          
+          <div class="blog-post">
+          <p class="blog-post-title"><strong>Stock trends identification script and CLI</strong> </p>
+          <p>February 2021 - Present</p>
+          <p> A Python program to scrape social media sites to identify and aggregate trending stocks. Extract transforms and loads (ETL) data into Firebase database.</p>
+          
+          <ul>
+              <li>Written in Python.</li>
+              <li>Searches reddit, yahoo, google</li>
+              <li>Uses Firebase to store collected data.</li>
+              <li>Uses REGEX to identify stocks.</li>
+              <li>Commandline line program to display data from database.</li>
+            </ul>
+          </div><!-- /.blog-post -->
+            <h5>Personal Projects</h5>
+            <div class="blog-post">
+              <p class="blog-post-title"> <em>Project:</em> <strong>Flask REST API</strong> </p>
               <p> A REST API with GET, POST, PUT, and DELETE options. See project on <a href="https://github.com/dave-lanigan/latin-mass-api">github</a>.</p>
               
               <ul>
@@ -87,6 +116,18 @@
                   <li>Running on Ubuntu in Google Cloud.</li>
                 </ul>
           </div><!-- /.blog-post -->
+
+          <div class="blog-post">
+            <p class="blog-post-title"> <em>Project:</em> <strong>Django/React REST API and Website</strong> </p>
+            <p> Django website to display content and a REST API with GET options to allow easier distribution of content. See project on <a href="https://github.com/dave-lanigan/1917-codex">github</a>.</p>
+            
+            <ul>
+                <li>Uses Django Webframework as the backend</li>
+                <li>Uses MongoDB as remote database running on an Atlas cluster.</li>
+                <li>Utilizes React JS as the frontend to handle content data manipulation.</li>
+                <li>Deployed app on Google Cloud instance using gunicorn as WSGI server and nginx to serve static files.</li>
+              </ul>
+        </div><!-- /.blog-post -->
 
             <div class="blog-post">
                 <p class="blog-post-title"> <em>Project:</em> <strong>Kybernetwork API Python Wrapper </strong> </p>
@@ -268,7 +309,6 @@
         <hr>
         <div class="container">
         <p class="text-center"> Please visit my <a href="https://github.com/dave-lanigan" >github</a> for other example projects.</p>
-        <p class="text-center"><em> Note: This resume is best viewed on software so you can explore the <a href="">links</a></p>
         <p class="text-center"><em>Made with html + css </em></p>
         </div>
     </footer>
