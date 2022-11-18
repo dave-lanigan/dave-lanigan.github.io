@@ -1,12 +1,9 @@
-import pic from "../public/me.png";
-import fusion from "../public/fusion.png";
-import bayer from "../public/bayer.jpg";
-import tapi from "../public/tapi.png";
 import TechComponent from '../components/techCard.js'
 import ProjectComponent from '../components/projectCard.js'
 import {AiFillTwitterCircle, AiFillInstagram, AiFillGithub, AiFillHeart} from 'react-icons/ai';
 import {DiPython, DiJavascript1, DiSqllite} from 'react-icons/di';
 import {FaRProject, FaReact, FaVuejs, FaAws, FaCss3Alt} from 'react-icons/fa';
+// import Image from 'next/image'
 import {
   AiFillHtml5
 } from 'react-icons/ai';
@@ -190,7 +187,7 @@ function App() {
           </nav>
           <div className='h-full text-center p-10 flex-row justify-evenly'>
             <div className='m-12 flex justify-center'>
-              <img className='rounded-full shadow-xl' src="/me.png"/>
+              <img className='rounded-full shadow-xl' src="./me.png"/>
             </div>
             <p className='text-3xl text-sky-600 font-medium'>
               David MJ Lanigan

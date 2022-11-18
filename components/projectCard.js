@@ -10,7 +10,7 @@ export default function ProjectCard(props){
     return(
         <div className='relative m-4 max-w-xl h-80 overflow-hidden rounded-lg shadow-lg bg-teal-600'>
             
-            <img className='brightness-50 content-center'  src={ `/${img}` } />
+            <img className='brightness-50 content-center'  src={ `./${img}` } />
 
             <div className='absolute top-0 right-0 p-3 pt-4 bg-white rounded-bl-lg'>
                 { props.info.project ? <AiOutlineFundProjectionScreen className='text-black' title="Project" size={22}/> : <BsBriefcaseFill className='text-black' title="Job" size={19}/> }
