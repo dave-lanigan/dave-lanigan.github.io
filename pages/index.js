@@ -196,7 +196,7 @@ function App() {
             <br/>
             <p>I work as a developer and part time as freelancer develops APIs and full stack apps. I enjoy learning about Web3, Bitcoin and ML in my spare time.</p>
             <br/>
-            <p>I ♥ Python and React, but I have experience with alot <a href="#tech"><u className='text-sky-600'>more</u></a>.</p>
+            <p>I ♥ Python and React and have experience with alot <a href="#tech"><u className='text-sky-600'>more</u></a>.</p>
             <br/>
             <div className='text-3xl flex justify-center gap-8 py-3'>
               <AiFillTwitterCircle />
