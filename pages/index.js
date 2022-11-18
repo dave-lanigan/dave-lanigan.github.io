@@ -197,7 +197,7 @@ function App() {
             </p>
             <h2 className='text-xl py-2'>Full Stack Developer</h2>
             <br/>
-            <p>I work as a developer and part time as freelancer develops API's and full stack apps. I enjoy learning about Web3, Bitcoin and ML in my spare time.</p>
+            <p>I work as a developer and part time as freelancer develops APIs and full stack apps. I enjoy learning about Web3, Bitcoin and ML in my spare time.</p>
             <br/>
             <p>I ♥ Python and React, but I have experience with alot <a href="#tech"><u className='text-sky-600'>more</u></a>.</p>
             <br/>
@@ -220,11 +220,10 @@ function App() {
         </section>
 
         <section className='min-h-screen bg-jimbo-light'>
-          <h3 id="projects" className="text-2xl py-10 text-jimbo-medium text-center">Work I've Done</h3>
+          <h3 id="projects" className="text-2xl py-10 text-jimbo-medium text-center">{`Work I've Done`}</h3>
           <div className='flex flex-col justify-evenly items-center'>
             {projectsList}
           </div>
-          {/* <div className='m-4'><a href="#">More</a></div> */}
         </section>
 
 
