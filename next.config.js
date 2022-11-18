@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  assetPrefix: "."
+  assetPrefix: "https://dave-lanigan.github.io"
 }
 
 module.exports = nextConfig
