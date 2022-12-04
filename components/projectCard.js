@@ -11,9 +11,11 @@ export default function ProjectCard(props){
     let GithubLink = function(props) {
         if (props.repo) {
             return(
-                <div className='absolute bottom-0 right-0 p-3 pt-4 bg-white rounded-tl-lg'>
-                    <a href={props.repo}><AiFillGithub size={22} /></a>
-                </div>
+                <a href={props.repo}>
+                    <div className='absolute bottom-0 right-0 p-3 pt-4 bg-white rounded-tl-lg'>
+                        <AiFillGithub size={22} />
+                    </div>
+                </a>
             );
         }
     }

@@ -172,9 +172,9 @@ let projects = [
     //img: bayer,
     img: "bayer.jpg",
     stack: [
-      <FaReact key="0" className='ml-1 mr-1' title="TailwindCSS" size={iconSize} />,
-      <SiFlask key="1" className='ml-1 mr-1' title="Next.js" size={iconSize} />,
-      // <AiFillHtml5 className='ml-1 mr-1' title="HTML" size={iconSize} />,
+      <SiGooglecloud className='ml-1 mr-1' title="Google Cloud" size={iconSize} />,
+      <FaReact key="0" className='ml-1 mr-1' title="React" size={iconSize} />,
+      <SiFlask key="1" className='ml-1 mr-1' title="Flask" size={iconSize} />,
       // <FaCss3Alt className='ml-1 mr-1' title="CSS" size={iconSize} />,
     ],
     repo: "https://github.com/stake-everything",
