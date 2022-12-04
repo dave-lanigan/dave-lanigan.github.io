@@ -112,7 +112,7 @@ let projects = [
   {
     title: "Contractor | Bayer",
     project: false,
-    blurb: "Various applications and APIs using Python and R.",
+    blurb: "Various applications and APIs using Python, R, Javascript and Vue.js.",
     //img: bayer,
     img: "bayer.jpg",
     stack: [ 
