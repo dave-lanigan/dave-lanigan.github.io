@@ -15,6 +15,7 @@ import {
   SiPostgresql,
   SiAmazondynamodb,
   SiSqlite,
+  SiFlask,
   //SiGo,
   SiGooglecloud,
   SiDocker,
@@ -122,7 +123,7 @@ let projects = [
       <SiPostgresql key="3console.log( pic )" className='ml-1 mr-1' title="PostgreSQL" size={iconSize}/>,
       <FaVuejs key="4" className='ml-1 mr-1' title="PostgreSQL" size={iconSize}/>
     ],
-    repo: "",
+    repo: null,
   },
   {
     title: "Regional Sales App",
@@ -135,7 +136,7 @@ let projects = [
       <FaCss3Alt key="1" className='ml-1 mr-1' title="CSS" size={iconSize} />,
       <FaVuejs key="2" className='ml-1 mr-1' title="Vue.js" size={iconSize}/>
     ],
-    repo: "",
+    repo: null,
   },
   {
     title: "Fusion Financial App",
@@ -162,13 +163,44 @@ let projects = [
       // <AiFillHtml5 className='ml-1 mr-1' title="HTML" size={iconSize} />,
       // <FaCss3Alt className='ml-1 mr-1' title="CSS" size={iconSize} />,
     ],
-    repo: "",
+    repo: "https://github.com/dave-lanigan/dave-lanigan.github.io",
+  },
+  {
+    title: "Stake Everything Crypto Website/API",
+    project: true,
+    blurb: "React website and Flask API [no longer maintained]. See github for code.",
+    //img: bayer,
+    img: "bayer.jpg",
+    stack: [
+      <FaReact key="0" className='ml-1 mr-1' title="TailwindCSS" size={iconSize} />,
+      <SiFlask key="1" className='ml-1 mr-1' title="Next.js" size={iconSize} />,
+      // <AiFillHtml5 className='ml-1 mr-1' title="HTML" size={iconSize} />,
+      // <FaCss3Alt className='ml-1 mr-1' title="CSS" size={iconSize} />,
+    ],
+    repo: "https://github.com/stake-everything",
   } 
 ]
 
 let projectsList = projects.map((el,idx)=>{
   return(<ProjectComponent key={idx} info={el} />)
 })
+
+
+const onButtonClick = () => {
+  // using Java Script method to get PDF file
+  fetch('./dmjl-resume.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          console.log( fileURL )
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'dmjl-resume.pdf';
+          alink.click();
+      })
+  })
+}
 
 //https://www.youtube.com/watch?v=k-Pi5ZMxHWY&t=832s
 
@@ -181,7 +213,7 @@ function App() {
             <a href="https://github.com/dave-lanigan"><p className='text-xl text-white'>dmjl</p></a>
             <ul className='flex items-center'>
               {/* <li><BsFillMoonStarsFill className="cursor-pointer"/></li> */}
-              <a href="#"><li className="bg-jimbo-medium text-black px-4 py-2 rounded-md ml-8">Resume</li></a>
+              <button onClick={onButtonClick}><li className="bg-jimbo-medium text-black px-4 py-2 rounded-md ml-8 drop-shadow-md">Resume</li></button>
               <li></li>
             </ul>
           </nav>
@@ -199,9 +231,9 @@ function App() {
             <p>I ♥ Python and React and have experience with alot <a href="#tech"><u className='text-sky-600'>more</u></a>.</p>
             <br/>
             <div className='text-3xl flex justify-center gap-8 py-3'>
-              <AiFillTwitterCircle />
-              <a href="https://github.com/dave-lanigan"><AiFillGithub /></a>
-              <AiFillInstagram />
+              <a className='drop-shadow-2xl' href="#"><AiFillTwitterCircle /></a>
+              <a className='drop-shadow-2xl' href="https://github.com/dave-lanigan"><AiFillGithub /></a>
+              <a className='drop-shadow-2xl' href="#"><AiFillInstagram /></a>
             </div>
           </div>
         </section>

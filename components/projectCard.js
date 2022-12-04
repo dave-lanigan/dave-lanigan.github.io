@@ -1,11 +1,22 @@
 import {BsBriefcaseFill} from 'react-icons/bs'
-import {AiOutlineFundProjectionScreen} from 'react-icons/ai'
+import {AiOutlineFundProjectionScreen, AiFillGithub} from 'react-icons/ai'
 
 export default function ProjectCard(props){
     
     let title = props.info.title;
     let stack = props.info.stack;
     let img = props.info.img;
+
+
+    let GithubLink = function(props) {
+        if (props.repo) {
+            return(
+                <div className='absolute bottom-0 right-0 p-3 pt-4 bg-white rounded-tl-lg'>
+                    <a href={props.repo}><AiFillGithub size={22} /></a>
+                </div>
+            );
+        }
+    }
 
     return(
         <div className='flex-col items-center justify-center relative m-4 max-w-xl h-80 overflow-hidden rounded-lg shadow-lg bg-teal-600'>
@@ -27,6 +38,7 @@ export default function ProjectCard(props){
                 <div className="flex flex-row text-black">{stack}</div>
             </div>
 
+            <GithubLink repo={props.info.repo} />
         </div>
     );
 }
