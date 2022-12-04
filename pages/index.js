@@ -194,7 +194,7 @@ function App() {
             </p>
             <h2 className='text-xl py-2'>Full Stack Developer</h2>
             <br/>
-            <p>I work as a developer and part time as freelancer develops APIs and full stack apps. I enjoy learning about Web3, Bitcoin and ML in my spare time.</p>
+            <p>I work as a developer and part time as freelancer, developing REST APIs and full stack apps. I enjoy learning about Web3, Bitcoin and ML in my spare time.</p>
             <br/>
             <p>I ♥ Python and React and have experience with alot <a href="#tech"><u className='text-sky-600'>more</u></a>.</p>
             <br/>

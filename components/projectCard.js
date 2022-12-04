@@ -8,9 +8,9 @@ export default function ProjectCard(props){
     let img = props.info.img;
 
     return(
-        <div className='relative m-4 max-w-xl h-80 overflow-hidden rounded-lg shadow-lg bg-teal-600'>
+        <div className='flex-col items-center justify-center relative m-4 max-w-xl h-80 overflow-hidden rounded-lg shadow-lg bg-teal-600'>
             
-            <img className='brightness-50 content-center'  src={ `./${img}` } />
+            <img className='brightness-50 content-center object-cover min-w-full min-h-full'  src={ `./${img}` } />
 
             <div className='absolute top-0 right-0 p-3 pt-4 bg-white rounded-bl-lg'>
                 { props.info.project ? <AiOutlineFundProjectionScreen className='text-black' title="Project" size={22}/> : <BsBriefcaseFill className='text-black' title="Job" size={19}/> }
