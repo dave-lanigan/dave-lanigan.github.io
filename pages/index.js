@@ -122,7 +122,7 @@ let projects = [
       <FaAws key="0" className='ml-1 mr-1' title="AWS" size={iconSize}/>,
       <SiFastapi key="1" className='ml-1 mr-1' title="FastAPI" size={iconSize}/>,
       <SiDocker key="2" className='ml-1 mr-1' title="Docker" size={iconSize}/>,
-      <SiPostgresql key="3console.log( pic )" className='ml-1 mr-1' title="PostgreSQL" size={iconSize}/>,
+      <SiPostgresql key="3" className='ml-1 mr-1' title="PostgreSQL" size={iconSize}/>,
       <FaVuejs key="4" className='ml-1 mr-1' title="PostgreSQL" size={iconSize}/>
     ],
     repo: null,
@@ -148,8 +148,8 @@ let projects = [
     img: "fusion.png",
     stack: [
       <FaVuejs key="0" className='ml-1 mr-1' title="Vue.js" size={iconSize} />,
-      <SiElectron key="2" className='ml-1 mr-1' title="Electron.js" size={iconSize} />,
-      <DiSqllite key="3" className='ml-1 mr-1' title="Sqlite3" size={iconSize} />
+      <SiElectron key="1" className='ml-1 mr-1' title="Electron.js" size={iconSize} />,
+      <DiSqllite key="2" className='ml-1 mr-1' title="Sqlite3" size={iconSize} />
     ],
     repo: null,
   },
@@ -174,9 +174,9 @@ let projects = [
     //img: bayer,
     img: "bayer.jpg",
     stack: [
-      <SiGooglecloud className='ml-1 mr-1' title="Google Cloud" size={iconSize} />,
-      <FaReact key="0" className='ml-1 mr-1' title="React" size={iconSize} />,
-      <SiFlask key="1" className='ml-1 mr-1' title="Flask" size={iconSize} />,
+      <SiGooglecloud key="0" className='ml-1 mr-1' title="Google Cloud" size={iconSize} />,
+      <FaReact key="1" className='ml-1 mr-1' title="React" size={iconSize} />,
+      <SiFlask key="2" className='ml-1 mr-1' title="Flask" size={iconSize} />,
       // <FaCss3Alt className='ml-1 mr-1' title="CSS" size={iconSize} />,
     ],
     repo: "https://github.com/stake-everything",
