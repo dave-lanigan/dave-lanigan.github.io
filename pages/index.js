@@ -2,7 +2,7 @@ import TechComponent from '../components/techCard.js'
 import ProjectComponent from '../components/projectCard.js'
 import {AiFillTwitterCircle, AiFillInstagram, AiFillGithub, AiFillHeart} from 'react-icons/ai';
 import {DiPython, DiJavascript1, DiSqllite} from 'react-icons/di';
-import {FaRProject, FaReact, FaVuejs, FaAws, FaCss3Alt} from 'react-icons/fa';
+import {FaRProject, FaReact, FaVuejs, FaAws, FaCss3Alt,FaTelegram} from 'react-icons/fa';
 // import Image from 'next/image'
 import {
   AiFillHtml5
@@ -16,93 +16,95 @@ import {
   SiAmazondynamodb,
   SiSqlite,
   SiFlask,
-  //SiGo,
+  SiGo,
   SiGooglecloud,
   SiDocker,
   SiElectron,
   SiTailwindcss
 } from 'react-icons/si';
 
+const techIconSize = 22;
+
 let languages = [
     {
-      icon: <DiPython />,
+      icon: <DiPython size={ techIconSize } />,
       title: "Python"
     },
     {
-      icon: <DiJavascript1 />,
+      icon: <DiJavascript1 size={ techIconSize } />,
       title: "Javascript"
     },
     {
-        icon: <SiTypescript />,
+        icon: <SiTypescript size={ techIconSize } />,
         title: "Typescipt"
     },
     {
-        icon: <FaRProject />,
+        icon: <FaRProject size={ techIconSize } />,
         title: "R"
     },
-    // {
-    //   icon: <SiGo />,
-    //   title: "Go"
-    // }
+    {
+      icon: <SiGo size={ techIconSize } />,
+      title: "Go"
+    }
 ]
 
 let frameworks = [
   {
-    icon: <SiFastapi />,
+    icon: <SiFastapi size={ techIconSize } />,
     title: "FastAPI"
   },
   {
-    icon: <FaReact />,
+    icon: <FaReact size={ techIconSize } />,
     title: "React.js"
   },
   {
-      icon: <SiNextdotjs />,
+      icon: <SiNextdotjs size={ techIconSize } />,
       title: "Next.js"
   },
   {
-    icon: <FaVuejs />,
+    icon: <FaVuejs size={ techIconSize } />,
     title: "Vue.js"
   },
   {
-      icon: <FaRProject />,
+      icon: <FaRProject size={ techIconSize } />,
       title: "R Shiny"
   }
 ]
 
 let databases = [
   {
-    icon: <SiPostgresql />,
+    icon: <SiPostgresql size={ techIconSize } />,
     title: "PostgreSQL"
   },
   {
-    icon: <SiSqlite />,
+    icon: <SiSqlite size={ techIconSize } />,
     title: "SQLite"
   },
   {
-    icon: <SiFirebase />,
+    icon: <SiFirebase size={ techIconSize } />,
     title: "Firebase"
   },
   {
-    icon: <SiAmazondynamodb/>,
+    icon: <SiAmazondynamodb size={ techIconSize } />,
     title: "DynamoDB"
   }
 ]
 
 let otherTech = [
   {
-    icon: <FaAws />,
+    icon: <FaAws size={ techIconSize } />,
     title: "AWS"
   },
   {
-    icon: <SiGooglecloud />,
+    icon: <SiGooglecloud size={ techIconSize } />,
     title: "GCloud"
   },
   {
-    icon: <SiDocker />,
+    icon: <SiDocker size={ techIconSize } />,
     title: "Docker"
   },
   {
-    icon: <SiTailwindcss />,
+    icon: <SiTailwindcss size={ techIconSize } />,
     title: "Tailwind CSS"
   }
 ]
@@ -208,38 +210,42 @@ function App() {
   return (
     <div className="App">
       <main className='bg-white'>
-        <section className='min-h-screen bg-white'>
-          <nav className='p-5 flex justify-between items-center bg-teal-600'>
-            <a href="https://github.com/dave-lanigan"><p className='text-xl text-white'>dmjl</p></a>
+        <section className='min-h-screen bg-bluish-lighter'>
+          
+          <nav className='p-5 flex justify-between items-center bg-bluish'>
+            <a href="https://github.com/dave-lanigan"><p className='text-2xl text-bluish-lighter font-semibold'>dmjl</p></a>
             <ul className='flex items-center'>
               {/* <li><BsFillMoonStarsFill className="cursor-pointer"/></li> */}
-              <button onClick={onButtonClick}><li className="bg-jimbo-medium text-black px-4 py-2 rounded-md ml-8 drop-shadow-md">Resume</li></button>
+              <button onClick={onButtonClick}><li className="bg-bluish-lightish text-bluish text-xl font-semibold px-4 py-2 rounded-md ml-8 drop-shadow-md">Resume</li></button>
               <li></li>
             </ul>
           </nav>
+
           <div className='h-full text-center p-10 flex-row justify-evenly'>
-            <div className='m-12 flex justify-center'>
-              <img className='rounded-full shadow-xl' src="./me.png"/>
+            <div className='flex justify-center'>
+              <div className='m-12 flex justify-center rounded-full w-fit border-2 border-bluish-medium bg-bluish-medium shadow-2xl'>
+                <img className='rounded-full' src="./me.png"/>
+              </div>
             </div>
-            <p className='text-3xl text-sky-600 font-medium'>
+            <p className='text-3xl text-bluish-medium font-medium'>
               David MJ Lanigan
             </p>
             <h2 className='text-xl py-2'>Full Stack Developer</h2>
             <br/>
             <p>I work as a developer and part time as freelancer, developing REST APIs and full stack apps. I enjoy learning about Web3, Bitcoin and ML in my spare time.</p>
             <br/>
-            <p>I ♥ Python and React and have experience with alot <a href="#tech"><u className='text-sky-600'>more</u></a>.</p>
+            <p>I ♥ Python and React and have experience with alot <a href="#tech"><u className='text-bluish-medium'>more</u></a>.</p>
             <br/>
             <div className='text-3xl flex justify-center gap-8 py-3'>
-              <a className='drop-shadow-2xl' href="#"><AiFillTwitterCircle /></a>
-              <a className='drop-shadow-2xl' href="https://github.com/dave-lanigan"><AiFillGithub /></a>
-              <a className='drop-shadow-2xl' href="#"><AiFillInstagram /></a>
+              <a className='shadow-2xl' href="https://twitter.com/bohemdev"><AiFillTwitterCircle size={38} /></a>
+              <a className='shadow-2xl' href="https://github.com/dave-lanigan"><AiFillGithub size={38} /></a>
+              <a className='shadow-2xl' href="t.me/bohemdev"><FaTelegram size={38} /></a>
             </div>
           </div>
         </section>
         
-        <section className='min-h-screen bg-jimbo-medium'>
-          <h3 id="tech" className="text-2xl py-10 text-white text-center">Technologies</h3>
+        <section className='min-h-screen bg-bluish'>
+          <h3 id="tech" className="text-3xl py-10 text-bluish-lighter text-center">Technologies</h3>
           <div className='flex flex-col justify-evenly items-center'>
             <TechComponent title="Languages" data={languages} />
             <TechComponent title="Frameworks" data={frameworks} />
@@ -248,13 +254,12 @@ function App() {
           </div>
         </section>
 
-        <section className='min-h-screen bg-jimbo-light'>
-          <h3 id="projects" className="text-2xl py-10 text-jimbo-medium text-center">{`Work I've Done`}</h3>
+        <section className='min-h-screen bg-bluish-lighter'>
+          <h3 id="projects" className="text-3xl py-10 text-bluish- text-center">{`Work I've Done`}</h3>
           <div className='flex flex-col justify-evenly items-center'>
             {projectsList}
           </div>
         </section>
-
 
       </main>
     </div>

@@ -13,9 +13,9 @@ export default function TechCard(props){
     })
     
     return(
-        <div className='flex flex-row justify-evenly w-5/6 max-w-xl m-4 p-4 rounded-lg shadow-lg bg-jimbo-light'>
+        <div className='flex flex-row justify-evenly w-5/6 max-w-xl m-4 p-4 rounded-lg shadow-lg bg-bluish-lighter'>
             <div className='flex justify-center items-center border-r-2 border-black w-6/12'>
-            <p className='text-xl'>{title}</p>
+            <p className='text-2xl'>{title}</p>
             </div>
             <div className='p-4 flex justify-center w-6/12'>
             <ul className='flex flex-col items-start w-fit'>

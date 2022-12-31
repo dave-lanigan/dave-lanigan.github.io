@@ -21,7 +21,7 @@ export default function ProjectCard(props){
     }
 
     return(
-        <div className='flex-col items-center justify-center relative m-4 max-w-xl h-80 overflow-hidden rounded-lg shadow-lg bg-teal-600'>
+        <div className='flex-col items-center justify-center relative m-4 max-w-xl h-80 overflow-hidden rounded-xl shadow-lg bg-bluish'>
             
             <img className='brightness-50 content-center object-cover min-w-full min-h-full'  src={ `./${img}` } />
 
