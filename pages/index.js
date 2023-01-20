@@ -216,8 +216,9 @@ function App() {
             <a href="https://github.com/dave-lanigan"><p className='text-2xl text-bluish-lighter font-semibold'>dmjl</p></a>
             <ul className='flex items-center'>
               {/* <li><BsFillMoonStarsFill className="cursor-pointer"/></li> */}
-              <button onClick={onButtonClick}><li className="bg-bluish-lightish text-bluish text-xl font-semibold px-4 py-2 rounded-md ml-8 drop-shadow-md">Resume</li></button>
-              <li></li>
+              <button onClick={onButtonClick}>
+                <li className="bg-bluish-lightish text-bluish text-xl font-semibold px-4 py-2 rounded-md ml-8 drop-shadow-md">Resume</li>
+              </button>
             </ul>
           </nav>
 
