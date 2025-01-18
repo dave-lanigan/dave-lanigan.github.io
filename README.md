@@ -1,20 +1,16 @@
-# 
+# dave-lanigan.github.io
+
 ## Tech
-- deno
+
+- Deno
 - NuxtJS
-- NuxtUI
-- formkit/auto-animate
-- 
+- daisyUI
+- tailwindcss
 
 
 ```bash
 deno -A npm:nuxi@latest init mi
 ```
-
-```bash
-deno -A npm:nuxi@latest init -t ui3 mi
-```
-
 
 ### Notes:
 
