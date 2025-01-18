@@ -16,7 +16,7 @@ jobs:
           deno-version: v2.0.0
       - run: |
           cd mi
-          deno install --allow-script .
+          deno install --allow-scripts .
           deno -A nuxt build --preset github_pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
