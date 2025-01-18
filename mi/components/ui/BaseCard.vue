@@ -1,9 +1,10 @@
 <template>
-    <div class="card bg-neutral text-base-content sm:w-3/4 md:w-1/2 border-md font-sans">
+    <div class="card bg-neutral text-base-content w-11/12 sm:w-3/4 md:w-7/12 lg:w-5/12 border-md font-sans">
         <div class="card-body">
+            <!-- <UiThemeController /> -->
             <div class="avatar">
                 <div class="mask mask-circle w-24 mt-4 mb-4">
-                    <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                    <img src="~/assets/img/profile-pic-v3.png" />
                 </div>
             </div>
             <h2 class="card-title font-normal text-primary text-2xl">Hi, I'm David.</h2>
@@ -13,8 +14,12 @@
             
             <div class="text-accent flex justify-between">
                 <div>
-                    <a href="https://github.com/dave-lanigan"><font-awesome :icon="['fab', 'github']" class="text-xl link hover:scale-125 transition-transform duration-300" /></a>
-                    <a href="https://linkedin.com/in/david-lanigan-734b0a8a"><font-awesome :icon="['fab', 'linkedin']" class="text-xl ml-3 link hover:scale-125 transition-transform duration-300" /></a>
+                    <a href="https://github.com/dave-lanigan">
+                        <font-awesome :icon="['fab', 'github']" class="text-xl link hover:scale-125 transition-transform duration-300" />
+                    </a>
+                    <a href="https://linkedin.com/in/david-lanigan-734b0a8a">
+                        <font-awesome :icon="['fab', 'linkedin']" class="text-xl ml-3 link hover:scale-125 transition-transform duration-300" />
+                    </a>
                 </div>
                 <div>
                     <font-awesome :icon="['fas', 'envelope']" class="text-xl link hover:scale-125 transition-transform duration-300" />

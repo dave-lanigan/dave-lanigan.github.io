@@ -3,9 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@nuxt/fonts', '@vesp/nuxt-fontawesome'],
-  // css: [
-  //   '@fortawesome/fontawesome-svg-core/styles.css'
-  // ],
+  css: ['~/assets/css/main.css'],
   fontawesome: {
     icons: {
       solid: ['envelope', 'code', 'code-compare', 'laptop-code'],

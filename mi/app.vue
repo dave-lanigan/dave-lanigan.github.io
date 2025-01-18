@@ -1,6 +1,10 @@
 <template>
-  <div data-theme="night" class="h-full">
-    <div class="flex flex-col items-center p-6">
+  <div :data-theme="theme" class="h-max min-h-screen">
+    
+    <div class="w-100 flex justify-end p-2"><UiThemeController /></div>
+    
+    <div class="flex flex-col items-center pb-6">
+      
       <UiBaseCard />
       
       <div class="bg-neutral w-px h-6"></div>
@@ -17,6 +21,7 @@
       </UiInfoCard>
       
       <div class="bg-neutral w-px h-6"></div>
+      
       <UiInfoCard headerIcon="laptop-code">
         <template #header>Frontend</template>
         <template #default>
@@ -30,6 +35,7 @@
       </UiInfoCard>
 
       <div class="bg-neutral w-px h-6"></div>
+      
       <UiInfoCard headerIcon="code-compare">
         <template #header>DevOps</template>
         <template #default>
@@ -45,4 +51,6 @@
   </div>
 </template>
 <script setup>
+const theme = useState('theme');
+theme.value = "dim";
 </script>
