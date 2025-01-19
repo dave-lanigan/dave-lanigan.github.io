@@ -9,7 +9,7 @@
             </div>
             <h2 class="card-title font-normal text-primary text-2xl">Hi, I'm David.</h2>
             <p class="mt-2 mb-2 prose text-neutral-content font-normal leading-snug">
-                A full stack developer who enjoys developing with FastAPI and VueJS. My daily work involves deploying serverless apps to the AWS Cloud as well as building CICD pipelines with Github Actions.
+                A full stack developer who enjoys developing with FastAPI and VueJS. My daily work involves building serverless apps deployed on the AWS Cloud, as well as building CICD pipelines with Github Actions.
             </p>
             
             <div class="text-accent flex items-center justify-between">
