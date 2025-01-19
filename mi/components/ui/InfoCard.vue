@@ -8,8 +8,8 @@
                 </h2>
         </div>
         <div class="collapse-content">
-                <p class="mt-2 mb-2 text-neutral-content font-normal leading-snug"><slot></slot></p>
-                <div class="text-accent flex justify-center mt-6"><slot name="tech"></slot></div>
+            <p class="mt-2 mb-2 text-neutral-content font-normal leading-snug"><slot></slot></p>
+            <div class="text-accent flex justify-center items-center mt-6"><slot name="tech"></slot></div>
         </div>
     </div>
 </template>
