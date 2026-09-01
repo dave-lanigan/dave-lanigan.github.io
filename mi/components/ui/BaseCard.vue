@@ -4,7 +4,11 @@
             <!-- <UiThemeController /> -->
             <div class="avatar">
                 <div class="mask mask-circle w-24 mt-4 mb-4">
-                    <img src="~/assets/img/profile-pic-v3.png" />
+                    <img
+                        src="/projects/PXL_20260613_180647846~2.jpg"
+                        alt="David Lanigan"
+                        class="object-cover object-[center_38%]"
+                    />
                 </div>
             </div>
             <h2 class="card-title font-normal text-primary text-2xl">Hi, I'm David.</h2>

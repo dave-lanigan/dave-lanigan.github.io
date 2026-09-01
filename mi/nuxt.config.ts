@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   fontawesome: {
     icons: {
-      solid: ['envelope', 'code', 'code-compare', 'laptop-code'],
+      solid: ['envelope', 'code', 'code-compare', 'laptop-code', 'arrow-left'],
       brands: [
         'github',
         'linkedin',
